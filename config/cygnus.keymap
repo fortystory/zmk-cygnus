@@ -132,7 +132,7 @@
         };
 
         combo_to_origin {
-            bindings = <&tog 7>;
+            bindings = <&tog 6>;
             key-positions = <36 37 40 41>;
             layers = <0>;
         };
@@ -140,13 +140,13 @@
         combo_to_qwerty {
             bindings = <&tog 0>;
             key-positions = <36 37 40 41>;
-            layers = <7>;
+            layers = <6>;
         };
 
         combo_ctrl_enter {
             bindings = <&kp LC(ENTER)>;
             key-positions = <16 15 14>;
-            layers = <5>;
+            layers = <4>;
         };
     };
 
@@ -271,10 +271,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE  &kp Q  &kp W           &kp E             &kp R             &kp T    &kp Y      &kp U              &kp I        &kp O            &kp P     &kp BSPC
-&kp ESC    &kp A  &hm LEFT_ALT S  &hm LCTRL D       &hm LEFT_SHIFT F  &kp G    &kp H      &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X           &kp C             &kp V             &kp B    &kp N      &kp M              &kp COMMA    &kp DOT          &kp FSLH  &kp DEL
-                                  &lt 5 UNDERSCORE  &lt 1 SPACE       &kp TAB  &kp ENTER  &lt 2 SPACE        &lt 6 MINUS
+&kp GRAVE  &kp Q           &kp W           &kp E             &kp R             &kp T         &kp Y                &kp U              &kp I        &kp O            &kp P                    &kp BSPC
+&kp ESC    &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LCTRL D       &hm LEFT_SHIFT F  &kp G         &kp H                &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &hm RIGHT_WIN SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z           &kp X           &kp C             &kp V             &kp B         &kp N                &kp M              &kp COMMA    &kp DOT          &kp FSLH                 &kp DEL
+                                           &lt 4 UNDERSCORE  &lt 1 SPACE       &mt LWIN TAB  &mt RIGHT_WIN ENTER  &lt 2 SPACE        &lt 5 MINUS
             >;
 
             label = "CYGNUS";
@@ -311,15 +311,6 @@
             >;
 
             label = "setting";
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
 
         number {
